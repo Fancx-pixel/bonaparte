@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Web Responsive</title>
+    <script
+      src="https://kit.fontawesome.com/8315a8fdb4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="stylegrid.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <li class="logo">
+          <span>ArmaWeb</span>
+          <button onclick=toggleMenu() id="toggle">
+            <i class='bxr  bx-arrow-from-right-stroke'></i> 
+          </button>
+        </li>
+        <li class="nav">
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <li>
+            <a href="#">
+              <i class='bxr  bxs-dashboard'></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bxr  bxs-calendar'></i>
+              <span>Calendar</span>
+            </a>
+          </li>
+          <li>
+            <button onclick=toggleSubMenu(this) class="dropdownbtn">
+            <i class='bxr  bx-checks'></i>
+            <span>ListCourses</span>
+            <i class='bxr  bx-arrow-down-stroke'></i>
+          </button>
+          <ul class="btnmenu">
+            <div>
+              <li><a href=""style="color: black;">Html</a></li>
+              <li><a href=""style="color: black;">Css Styling</a></li>
+              <li><a href=""style="color: black;">JavaScript</a></li>
+              <li><a href=""style="color: black;">DomJava</a></li>
+            </div>
+          </ul>
+          </li>
+          <li>
+            <button onclick=toggleSubMenu(this) class="dropdownbtn">
+            <i class='bxr  bx-bar-chart-big'></i> 
+            <span>Project</span>
+            <i class='bxr  bx-arrow-down-stroke'></i>
+          </button>
+          <ul class="btnmenu">
+            <div class="text">
+              <li><a href="" style="color: black;">UIUX Desaign</a></li>
+              <li><a href="" style="color: black;">Web Development</a></li>
+              <li><a href="" style="color: black;">App's Development</a></li>
+              <li><a href="" style="color: black;">Full Stack</a></li>
+            </div>
+          </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bxr  bxs-user'></i>
+              <span>Resume</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bxr  bxs-cog'></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </li>
+      </ul>
+    </nav>
+    <!-- mainconten -->
+    <div class="maincontent">
+      <div class="mainlist1">
+        <div class="card">
+          <div class="title">
+            <h1>Service PAGER</h1>
+          </div>
+          <div class="desc">
+            <h3>Kami siap 24/7 kapanpun dan dimana pun</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde, commodi molestiae maiores fugit at consequatur iure a accusamus iusto!</p>
+          </div>
+          <div class="img1">
+            <div class="boximg">
+              <img src="https://konstruksi.besi.co.id/wp-content/uploads/2024/11/Pagar-Besi-7-1024x576.jpg" alt="">
+              <button>Booking Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainlist2">
+        <div class="card">
+          <div class="title">
+            <h1>Service AC</h1>
+          </div>
+          <div class="desc">
+            <h3>Kami siap 24/7 kapanpun dan dimana pun</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde, commodi molestiae maiores fugit at consequatur iure a accusamus iusto!</p>
+          </div>
+          <div class="img1">
+            <div class="boximg">
+              <img src="https://aquaelektronik.com/upload_files/1/56445b50c2-ac-split.png" alt="">
+              <button>Booking Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainlist3">
+        <div class="card">
+          <div class="title">
+            <h1>Service AC</h1>
+          </div>
+          <div class="desc">
+            <h3>Kami siap 24/7 kapanpun dan dimana pun</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde, commodi molestiae maiores fugit at consequatur iure a accusamus iusto!</p>
+          </div>
+          <div class="img1">
+            <div class="boximg">
+              <img src="https://id-live-01.slatic.net/p/c309f310c62ec6ea5b68f28d294d9b9b.jpg" alt="">
+              <button>Booking Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- myscript -->
+    <script src="main.js" defer></script>
+  </body>
+</html>

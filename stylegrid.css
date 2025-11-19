@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+:root {
+    --color1 : #262424;
+    --color2 : #240b0b1a;
+    --color3 : #EAEFFE;
+    --color4 : #333333;
+    --color5 : #6752de;
+    --color6 : #aea0fd;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--color2);
+}
+
+#sidebar {
+    background-color: var(--color5);
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    width: 200px;
+    transition: .3s ease;
+    align-self: start;
+    text-wrap: nowrap;
+}
+
+#sidebar.close {
+    width: 48px;
+    overflow: hidden;
+}
+
+.logo button {
+    background-color: red;
+}
+
+#sidebar .logo {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background-color: var(--color6);
+}
+
+#toggle i{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+#sidebar a, #sidebar .dropdownbtn, #sidebar .logo {
+    border-radius: .5em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: var(--color3);
+}
+#sidebar a:hover, #sidebar .dropdownbtn:hover {
+    background-color: #eaeffe70;
+}
+
+#sidebar button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+}
+
+.btnmenu {
+    display: grid;
+    overflow: hidden;
+    height: 0px;
+    transition: .4s ease;
+}
+.btnmenu.show {
+    height: 230px;
+    padding-left: .4em;
+    color: var(--color1);
+}
+
+.text li a {
+    color: var(--color1);
+}
+
+.dropdownbtn {
+    flex-grow: 1;
+}
+
+.rotate i:last-child {
+    rotate: 180deg;
+}
+
+/* maincontent */
+.maincontent {
+    display: grid;
+    min-height: 100vh;
+    width: fit-content;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-area: "mainlist 1 mainlist2 mainlist3";
+    grid-template-rows: auto auto auto;
+}
+
+.mainlist1, .mainlist2, .mainlist3{
+    background-color: var(--color5);
+    border-radius: .6rem;
+    color: var(--color3);
+    margin: 1rem;
+    height: fit-content;
+    border: 1px solid black;
+}
+
+.img1 img {
+    height: 100px;
+    display: flex;
+    align-content: center;
+    width: 200px;
+    border-radius: .5rem;
+}
+
+.mainlist1 .card, .mainlist2 .card, .mainlist3 .card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.boximg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.boximg button {
+    margin-top: 1rem;
+    padding: .4rem;
+    border: none;
+    outline: none;
+    background-color: greenyellow;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .maincontent {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    #sidebar {
+        min-height: 135dvh;
+    }
+}
